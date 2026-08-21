@@ -7,9 +7,10 @@
 <html>
 
 <head>
-	<title>Massively by HTML5 UP</title>
+	<title>John Draper - Data Scientist</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="John Draper — data scientist with an M.S. in Data Science, top-5 Kaggle competitor, and builder of end-to-end ML products for web and Android." />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/favicon.ico"
      href="favicon.ico" />
@@ -30,8 +31,8 @@
 			<p><b>
 					<font size=7px>Data Scientist</font>
 				</b></p>
-			<p>(almost) Master's degree in Data Science with demonstrated ability to work in diverse interdisciplinary
-				domains </p>
+			<p>M.S. in Data Science · top-5 Kaggle competitor · I build machine learning products end to end,
+				from computer-vision pipelines to Android apps </p>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -39,7 +40,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<ul class="logo">Machine Learning on the Cloud</ul>
+			<ul class="logo">Machine Learning, End to End</ul>
 		</header>
 
 
@@ -78,12 +79,16 @@
 						<h3>I am a Data Scientist who :</h3>
 					</center>
 					<ul>
-						<li>💕 loves to solve <b>complex</b> problems in diverse domains</li>
-						<li>☁️ is AWS certified to <b>do more with less</b> on the cloud</li>
+						<li>💕 loves to solve <b>complex</b> problems in diverse domains — from geotechnical imaging to
+							Japanese vocabulary</li>
+						<li>🏆 fights for the top of the <b>Kaggle</b> leaderboards — currently <b>top 5</b> in an
+							international computer-vision competition</li>
 						<li>🦾 uses machine learning to <i>see the unseen</i></li>
-						<li>🤖 is addicted to chatGPT and cutting edge technology
-						<li>⚕️has deep medical domain knowledge. My patients call me Dr. John</li>
-						<li>🅰️ earns a 4.0 GPA and is a teacher's pet
+						<li>🚀 ships <b>end to end</b>: research code, polished web apps, and Android APKs released
+							through CI/CD</li>
+						<li>🤖 speaks fluent AI audio: WhisperX transcription, neural text-to-speech, ffmpeg pipelines</li>
+						<li>☁️ is AWS certified to <b>do more with less</b> on the cloud</li>
+						<li>⚕️ has deep medical domain knowledge. My patients call me Dr. John</li>
 						<li>📊 <b>showcases</b> your data. Tableau certified!</li>
 					</ul>
 				</article>
@@ -102,6 +107,67 @@
 			<section class="posts">
 				<article>
 					<header>
+						<span class="date">August 20, 2026</span>
+						<h2><a href="https://www.kaggle.com/competitions/soil-grain-size-from-photos">Predicting Soil Grain
+								Size From Photos</a></h2>
+					</header>
+					<a class="image fit"><img src="images/kaggle_soil_curves.png"
+							alt="Weibull-fitted grain size distribution curves compared to lab measurements" /></a>
+					<p>My entry in the <a href="https://www.kaggle.com/competitions/soil-grain-size-from-photos"
+							target="_blank">GRID 2026 Kaggle competition</a> hosted by BOKU University (Vienna): predict
+						the full cumulative grain-size distribution of a soil sample from photographs of its surface.
+						My submission currently sits <b>top 5 (4th) on the public leaderboard</b> out of an
+						international field. Along the way I verified that a two-parameter Weibull family reconstructs
+						lab-measured curves down to single-digit EMD, built camera-invariant image features validated
+						with leave-one-out cross-validation, recovered physical pixel scale from EXIF metadata,
+						calibrated against the host team's published reference model, and reverse-engineered the
+						leaderboard's aggregate scoring behavior through carefully designed probe submissions.</p>
+					<ul class="actions special">
+						<li><a href="https://www.kaggle.com/competitions/soil-grain-size-from-photos" class="button"
+								target="_blank">See the Competition</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">August 19, 2026</span>
+						<h2><a href="https://john-draper.github.io/flashcard-songs/">Song Lyric Flashcards — Web +
+								Android</a></h2>
+					</header>
+					<a class="image fit"><img src="images/flashcards_card.png"
+							alt="Japanese vocabulary flashcard app with flip cards and progress tracking" /></a>
+					<p>A language-learning app for studying vocabulary from song lyrics. Each song is a self-contained
+						HTML flashcard deck — flip cards, studied-tracking, progress export — with zero build step and
+						zero server. The same codebase ships as an <b>offline Android app</b>: a Kotlin WebView wrapper
+						bundles the entire site into an APK with no INTERNET permission, and a GitHub Actions workflow
+						builds and signs a release automatically on every version tag.</p>
+					<ul class="actions special">
+						<li><a href="https://john-draper.github.io/flashcard-songs/" class="button"
+								target="_blank">Try the App</a></li>
+						<li><a href="https://github.com/john-draper/flashcard-songs" class="button"
+								target="_blank">See the Code</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">August 10, 2026</span>
+						<h2><a href="https://github.com/john-draper/SimpleVox">SimpleVox — AI Profanity Filter for
+								Video</a></h2>
+					</header>
+					<a class="image fit"><img src="images/simplevox_pipeline.png"
+							alt="Four stage audio pipeline: transcribe, match, speak, splice" /></a>
+					<p>An open-source Python tool that removes profanity from any video. WhisperX supplies word-level
+						timestamps, each flagged word is matched to a clean euphemism, edge-tts generates the
+						replacement audio in a neural voice, and ffmpeg splices it back in duration-matched — while the
+						video stream itself stays lossless. It is the third generation of my audio-censoring pipeline
+						family (after audiobook-censor-pipeline and revox), simplified to run with no API keys, no
+						tokens, and no self-hosted servers.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/john-draper/SimpleVox" class="button" target="_blank">See the
+								Code</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
 						<span class="date">April  15, 2023</span>
 						<h2><a href="https://github.com/john-draper/classification-with-a-tabular-vector-borne-disease-dataset/blob/main/DiseasePredictionModel.ipynb">Classification With a Tabular Disease Dataset</a></h2>
 					</header>
@@ -114,12 +180,13 @@
 				<article>
 					<header>
 						<span class="date">June  20, 2023</span>
-						<h2><a href="#">Classification With a Tabular Disease Dataset</a></h2>
+						<h2><a href="https://www.kaggle.com/competitions/playground-series-s3e17">Binary Classification
+								of Machine Failures</a></h2>
 					</header>
 					<a class="image fit"><img src="images/kaggle3_17_1.jpg" alt="" /></a>
-					<p>Another <a href="https://www.kaggle.com/competitions/playground-series-s3e17" target="_blank">kaggle competition entry.</a>I learned a lot and got my feet feet wet with some mixed tabular as well as data in string and float format.  My focus was more on data analysis, preparation and feature engineering.</p>
+					<p>Another <a href="https://www.kaggle.com/competitions/playground-series-s3e17" target="_blank">kaggle competition entry.</a>I learned a lot and got my feet wet with some mixed tabular as well as data in string and float format.  My focus was more on data analysis, preparation and feature engineering.</p>
 					<ul class="actions special">
-						<li><a href="https://github.com/john-draper/classification-with-a-tabular-vector-borne-disease-dataset/blob/main/DiseasePredictionModel.ipynb" class="button" target="_blank">See My Notebook</a></li>
+						<li><a href="https://github.com/john-draper/kaggle" class="button" target="_blank">See My Notebooks</a></li>
 					</ul>
 				</article>
 
